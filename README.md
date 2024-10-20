@@ -156,7 +156,7 @@ npm test
 The load balancer distributes requests across multiple workers in a round-robin fashion. To start the application with horizontal scaling:
 
 ```bash
-npm run start
+npm run start:multi
 ```
 
 The load balancer will listen on localhost:4000, and worker instances will be on ports 4001, 4002, etc.
