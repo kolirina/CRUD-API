@@ -39,9 +39,9 @@ Run the following command to install all required dependencies:
 npm install
 ```
 
-### 3. Run the application
+## 3. Run the application
 
-#### Development mode
+### Development mode
 
 To start the application in development mode (with `nodemon` or `ts-node-dev`), run the following command:
 
@@ -49,7 +49,7 @@ To start the application in development mode (with `nodemon` or `ts-node-dev`), 
 npm run start:dev
 ```
 
-## Production mode
+### Production mode
 
 To build and start the application in production mode, run the following commands:
 
@@ -57,7 +57,7 @@ To build and start the application in production mode, run the following command
 npm run start:prod
 ```
 
-### 4. Horizontal Scaling (optional)
+### Horizontal Scaling
 
 To run the application with horizontal scaling and load balancing, use the following command:
 
