@@ -84,11 +84,11 @@ Retrieves all users.
 **Example response:**
 
 ```
-[ {
+{
     "id": "uuid", "username": "John Doe",
     "age": 25,
-        "hobbies": ["reading", "swimming"]
-    } ]
+    "hobbies": ["reading", "swimming"]
+}
 ```
 
 #### 2. GET `/api/users/{userId}`
@@ -107,7 +107,11 @@ Creates a new user. The request body must contain `username`, `age`, and `hobbie
 - **Request Body:**
 
 ```
-{ "username": "John Doe", "age": 25, "hobbies": ["reading", "swimming"] }
+{
+    "username": "John Doe",
+    "age": 25,
+    "hobbies": ["reading", "swimming"]
+}
 ```
 
 - **Response:** 201 Created
@@ -121,7 +125,11 @@ Updates an existing user by id.
 - **Request Body:**
 
 ```
-{ "username": "John Smith", "age": 26, "hobbies": ["traveling"] }
+{
+    "username": "John Smith",
+    "age": 26,
+    "hobbies": ["traveling"]
+}
 ```
 
 - **Response:** 200 OK
