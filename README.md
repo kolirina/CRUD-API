@@ -13,7 +13,7 @@ This project is a simple CRUD API built using Node.js (version 22.x.x) and TypeS
 - **Error Handling**: Proper handling of invalid UUIDs, non-existent records, and server-side errors.
 - **Environment Variables**: Port configuration stored in `.env` file.
 - **Horizontal Scaling**: The application can be scaled with multiple workers using the Node.js Cluster API and a load balancer.
-- **Tests**: At least three test scenarios for the API endpoints.
+- **Tests**: Six test scenarios for the API endpoints.
 
 ## Installation and Setup
 
@@ -39,15 +39,7 @@ Run the following command to install all required dependencies:
 npm install
 ```
 
-### 3. Create `.env` file
-
-Create a `.env` file at the root of the project and define the port:
-
-```bash
-PORT=3000
-```
-
-### 4. Run the application
+### 3. Run the application
 
 #### Development mode
 
@@ -62,16 +54,15 @@ npm run start:dev
 To build and start the application in production mode, run the following commands:
 
 ```bash
-npm run build
-npm run start
+npm run start:prod
 ```
 
-### 5. Horizontal Scaling (optional)
+### 4. Horizontal Scaling (optional)
 
 To run the application with horizontal scaling and load balancing, use the following command:
 
 ```bash
-npm run start
+npm run start:multi
 ```
 
 This will start a load balancer on localhost:4000 and worker instances on ports 4001, 4002, and so on.
@@ -80,7 +71,7 @@ This will start a load balancer on localhost:4000 and worker instances on ports 
 
 ### Base URL
 
-Development: http://localhost:3000
+Development: http://localhost:4000
 
 ### Endpoints
 
