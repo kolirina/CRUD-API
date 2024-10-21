@@ -84,7 +84,11 @@ Retrieves all users.
 **Example response:**
 
 ```
-[ { "id": "uuid", "username": "John Doe", "age": 25, "hobbies": ["reading", "swimming"] } ]
+[ {
+    "id": "uuid", "username": "John Doe",
+    "age": 25,
+        "hobbies": ["reading", "swimming"]
+    } ]
 ```
 
 #### 2. GET `/api/users/{userId}`
